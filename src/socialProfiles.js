@@ -7,7 +7,7 @@ class SocialProfile extends Component {
         const {link, image} =this.props.socialProfile;
         return(
             <span>
-                <a href={link}>
+                <a href={link}  target='_blank'  rel="noopener noreferrer" >
                     <img src={image} alt='social-profile' style={{width:35, height:35 ,margin:10}}   /> </a>
             </span> 
         )
