@@ -1,28 +1,36 @@
-import emailIcon from '..assets/email_icon.png';
-import githubIcon from '..assets/github_icon.png';
-import linkedinIcon from '..assets/linkkedin_icon.png';
-import twitterIcon from '..assets/twitter_icon.png';
 
-const SOCIAL_PROFILES = [
-    {
-        id: 1,
-        link:'mailto:surualone@gmail.com',
-        image:emailIcon
-    },
-    {
-        id: 2,
-        link:'mailto://github.com/sarika296',
-        image:githubIcon
-    },
-    {
-        id: 3,
-        link:'mailto: www.linkedin.com/in/sarika-dewangan',
-        image:linkedinIcon
-    },
-    {
-        id: 4,
-        link:'mailto:surualone@gmail.com',
-        image:twitterIcon
+import React,{Component } from 'react';
+import SOCIAL_PROFILES from './SocialProfiles1'
+
+class SocialProfile extends Component {
+    render() {
+        const {link, image} =this.props.socialProfile;
+        return(
+            <div style={{display:'inline-block'}}>
+                <a href={link}>
+                    <img src={image} alt='social-profile' style={{width:300, height:200, margin:10}}   /> </a>
+            </div>
+        )
     }
-];
-export default SOCIAL_PROFILES;
+}
+
+class SocialProfiles extends Component {
+    render() {
+        return(
+            <div>
+                <h2>Connect with me!</h2>
+                <div>
+                    {
+                        SOCIAL_PROFILES.map(SOCIAL_PROFILE => {
+
+                            return (
+                                <SocialProfile key={SOCIAL_PROFILE.id} socialProfile={SOCIAL_PROFILE}  />
+                            );
+                        })
+                    }
+                </div>
+            </div>
+        )
+    }
+}
+export default SocialProfiles;
