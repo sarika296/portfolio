@@ -1,4 +1,5 @@
 import React,{Component} from 'react';
+import Projects from './Projects';
 
 class App extends Component {
     constructor()
@@ -32,6 +33,8 @@ class App extends Component {
 
                 )
         }
+        <hr/>
+        <Projects />
             </div>
         )
     }
