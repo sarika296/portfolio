@@ -6,7 +6,7 @@ import twitterIcon from './assets/twitter_icon.png';
 const SOCIAL_PROFILES = [
     {
         id: 1,
-        link:'mailto:surualone@gmail.com',
+        link:'mailto:sarikadewangan96@gmail.com',
         image:emailIcon
     },
     {
@@ -21,7 +21,7 @@ const SOCIAL_PROFILES = [
     },
     {
         id: 4,
-        link:'mailto:surualone@gmail.com',
+        link:'https://twitter.com/dkcodehelper',
         image:twitterIcon
     }
 ];
