@@ -1,10 +1,11 @@
 import React,{Component} from 'react';
-import Projects from './Projects';
-import SocialProfiles from './SocialProfiles';
-import profile from './assets/profile.png';
-import './index.css'
-
+import Projects from './client/components/Projects';
+import SocialProfiles from './client/components/SocialProfiles';
+import profile from './client/assets/profile.png';
+import './client/styles/index.css';
+import  Title from './Title';
 class App extends Component {
+
     constructor()
     {
         super();
@@ -20,9 +21,10 @@ class App extends Component {
 
         return(
             <div>
-                <img src={profile} alt='profile ' className='profile' />
+                <img src={profile} alt='profile' className='profile' />
                <h1>Hello</h1>
-               <p>My name is sarika.I'm a student.</p>
+               <p>My name is sarika.</p>
+               <Title />
                <p>I'm always looking forward on meaningful projects.</p>
                {
                this.state.displayBio ?

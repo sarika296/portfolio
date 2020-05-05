@@ -1,12 +1,12 @@
 @font-face {
     font-family: RobotoCondensed;
-    src:url(./assets/roboto-condensed.light.ttf);
+    src:url(../assets/font/roboto-condensed.light.ttf);
     font-weight:800;
 }
 
 @font-face {
     font-family: EconomicaBold;
-    src:url(./assets/economica-bold.ttf);
+    src:url(../assets/font/economica-bold.ttf);
 }
 
 body {

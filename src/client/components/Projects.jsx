@@ -1,10 +1,10 @@
 import React,{Component } from 'react';
-import PROJECTS from './projects1';
+import PROJECTS from '../assets/data/projects';
 
 class Project extends Component {
     render() {
         console.log("this.props",this.props);
-        const {title,image, description, link} =this.props.project;
+        const {title, image, description, link} =this.props.project; //object destructuring. 
         return (
             <div style={{display: 'inline-block', width:300, margin:10 }}>
                 <h3>{title}</h3>
