@@ -4,7 +4,6 @@ import SocialProfiles from './client/components/SocialProfiles';
 import profile from './client/assets/profile.png';
 import './client/styles/index.css';
 import  Title from './client/components/Title';
-import Jokes from './client/components/jokes';
 
 class App extends Component {
 
@@ -45,8 +44,6 @@ class App extends Component {
         <Projects />
         <hr />
         <SocialProfiles />
-        <hr />
-        <Jokes />
             </div>
         )
     }
