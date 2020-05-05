@@ -4,6 +4,7 @@ import SocialProfiles from './client/components/SocialProfiles';
 import profile from './client/assets/profile.png';
 import './client/styles/index.css';
 import  Title from './client/components/Title';
+import Header from './client/components/Header';
 
 class App extends Component {
 
@@ -19,9 +20,9 @@ class App extends Component {
     }
 
     render() {
-
         return(
             <div>
+                <Header />
                 <img src={profile} alt='profile' className='profile' />
                <h1>Hello</h1>
                <p>My name is sarika.</p>
