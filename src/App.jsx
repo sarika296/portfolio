@@ -3,7 +3,9 @@ import Projects from './client/components/Projects';
 import SocialProfiles from './client/components/SocialProfiles';
 import profile from './client/assets/profile.png';
 import './client/styles/index.css';
-import  Title from './Title';
+import  Title from './client/components/Title';
+import Jokes from './client/components/jokes';
+
 class App extends Component {
 
     constructor()
@@ -43,6 +45,8 @@ class App extends Component {
         <Projects />
         <hr />
         <SocialProfiles />
+        <hr />
+        <Jokes />
             </div>
         )
     }
